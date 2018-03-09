@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
--<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -11,10 +11,10 @@
 	<version>1.0</version>
 
 
-	-<build>
+	<build>
 
 
-		-<plugins>
+		<plugins>
 
 			<!--This plugin compress all your resources into your release distributable-->
 
@@ -23,14 +23,14 @@
 
 
 
-			-<plugin>
+			<plugin>
 
 				<groupId>org.apache.maven.plugins</groupId>
 
 				<artifactId>maven-assembly-plugin</artifactId>
 
 
-				-<configuration>
+				<configuration>
 
 					<descriptor>bin.xml</descriptor>
 
@@ -39,15 +39,15 @@
 				</configuration>
 
 
-				-<executions>
+				<executions>
 
 
-					-<execution>
+					<execution>
 
 						<phase>package</phase>
 
 
-						-<goals>
+						<goals>
 
 							<goal>single</goal>
 
