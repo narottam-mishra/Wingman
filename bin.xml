@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 
--<assembly>
-	-<formats>
+<assembly>
+	<formats>
 
 		<format>tar.gz</format>
 
 	</formats>
 
 
-	-<fileSets>
+	<fileSets>
 
 
-		-<fileSet>
+		<fileSet>
 
 			<directory>myApp/myproj/1.0</directory>
 
 			<outputDirectory>FinalBuild</outputDirectory>
 
 
-			-<includes>
+			<includes>
 
 				<include>*</include>
 
