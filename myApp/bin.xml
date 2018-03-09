@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+-<assembly>
+	-<formats>
+
+		<format>tar.gz</format>
+
+	</formats>
+
+
+	-<fileSets>
+
+
+		-<fileSet>
+
+			<directory>myApp/myproj/1.0</directory>
+
+			<outputDirectory>FinalBuild</outputDirectory>
+
+
+			-<includes>
+
+				<include>*</include>
+
+			</includes>
+
+		</fileSet>
+
+	</fileSets>
+
+</assembly>

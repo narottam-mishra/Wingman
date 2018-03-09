@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>myApp</groupId>
+
+	<artifactId>myproj</artifactId>
+
+	<version>1.0</version>
+
+
+	-<build>
+
+
+		-<plugins>
+
+			<!--This plugin compress all your resources into your release distributable-->
+
+
+			<!--The files that you want compress inside your distributable is specified in a bin.xml file-->
+
+
+
+			-<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+
+				<artifactId>maven-assembly-plugin</artifactId>
+
+
+				-<configuration>
+
+					<descriptor>bin.xml</descriptor>
+
+					<finalName>${pom.name}-${pom.version}</finalName>
+
+				</configuration>
+
+
+				-<executions>
+
+
+					-<execution>
+
+						<phase>package</phase>
+
+
+						-<goals>
+
+							<goal>single</goal>
+
+						</goals>
+
+					</execution>
+
+				</executions>
+
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+</project>
